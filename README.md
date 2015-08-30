@@ -33,7 +33,20 @@ Paverblock\Easyauth\Providers\EasyAuthServiceProvider::class
 
 Since this application depends on JWT Tokens, you need to add this middleware to your Kernel.php:
 
+```
 'jwt.auth' => \Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+```
+Then in your terminal:
+
+```
+php artisan vendor:publish
+```
+
+Run database migrations as well:
+
+```
+php artisan migrate
+```
 
 ## To Do
 
